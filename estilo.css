@@ -1,0 +1,200 @@
+
+
+
+/* ////////////////// FORMATAÇÕES GERAIS /////////////////////*/
+* {
+  font-family: Quicksand;
+}
+
+/*/////////////////////// HEADER /////////////////////////*/
+
+.nav {
+  width: 100%;
+  height: 30%;
+  margin: auto;
+}
+
+.nav__menu {
+  margin: auto;
+  /* background-color: greenyellow; */
+  flex-direction: row;
+  justify-content: center;
+  width: 60%;
+  text-align: center; 
+}
+
+
+.nav__links a, li{
+  text-decoration: none;
+  list-style: none;
+  display: inline;
+  line-height: 50px;
+  margin: 0px 10px 0px 10px;
+  text-transform: uppercase;
+  font-size: 1.07em;
+  color: gray;
+}
+
+.nav__links a:hover{
+  background-color:whitesmoke;
+}
+
+
+.clear {
+  clear: both;
+}
+
+/* ///////////////////////// PRINCIPAL /////////////////////*/
+
+.main__background {
+  background-image: url('bg2.png');
+  background-size: cover;
+  width: 100%;
+  /* height: 400px; */
+  opacity: 0.5;
+  background-attachment: fixed;
+}
+
+.main__logo {
+  display: flex;
+  flex-direction: center;
+  justify-content: center;
+  align-items: center;
+  /* height: 60vh; */
+  height: 20rem;
+  
+
+}
+
+.logo__img {
+  width: 320px;
+  padding: 20px;
+}
+
+.main__content {
+  display: flex;
+ flex-direction: row;
+ justify-content: center;
+ align-items: center;
+ height: 25rem;
+ /* border: red solid 2px; */
+  
+}
+
+.content__box {
+  display: flex;
+  flex-direction: row;
+  width: 15rem;
+  height: 10rem;
+  margin: 1rem;
+  background-color: white;
+}
+
+.content__box--elements {
+  display: flex;
+  font-size: 2.7rem;
+  padding: 20px;
+  text-align: center;
+  
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  height: 15%;
+  font-size: 1.7rem;
+  padding: 20px;
+}
+
+input[type=email] {
+  width: 40rem;
+  height: 2rem;
+  margin: 20px;
+}
+
+input:focus {
+  outline: none; 
+  
+}
+
+.btn {
+  width: 6rem;
+  height: 2.4rem;
+}
+
+/* //////////////////// PAGINA 2 ///////////////////////*/
+
+.pagina2__titulo {
+  text-align: center;
+  line-height: 15rem;
+}
+
+/*////////////////////// MEDIA ////////////////////////*/
+
+@media screen and (max-width: 767px) {
+ 
+
+input[type=email] {
+  width: 15rem;
+  height: 2rem;
+  margin: 20px;
+}
+
+.btn {
+  width: 4rem;
+  height: 2.4rem;
+}
+
+.main__background {
+  background-image: url('bg2.png');
+  background-repeat: repeat-y;
+  background-size: 1500px;
+  opacity: 0.5;
+  background-attachment: fixed;
+
+}
+
+
+.main__content {
+  display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ flex-wrap: nowrap;
+  
+}
+
+.content__box {
+  display: flex;
+  flex-direction: column;
+  width: 10rem;
+  height: 10rem;
+  margin: 0.5rem;
+  background-color: white;
+}
+
+.content__box--elements {
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  padding: 15px;
+  text-align: center;
+  
+}
+
+.nav__links a, li{
+  text-decoration: none;
+  list-style: none;
+  display: block;
+  line-height: 40px;
+  text-transform: uppercase;
+  font-size: 1em;
+  color: gray;
+}
+
+.nav__links a:hover{
+  background-color:whitesmoke;
+  display: block;
+}
+

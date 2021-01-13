@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+    
+    <title>Projeto Labenu</title>
+</head>
+
+<body>
+
+<header>
+  <nav class="nav">
+    <div class="nav__menu">
+    <ul class="nav__links">
+      <li><a href="https://www.labenu.com.br/">Home</a></li>
+      <li><a href="https://www.labenu.com.br/curso">Curso</a></li>
+      <li><a href="https://www.labenu.com.br/estudantes-labenu">Depoimentos</a></li>
+      <li><a href="https://www.labenu.com.br/quem-somos">Sobre nós</a></li>
+    </ul>
+    </div>
+    <div class="clear"></div>
+  </nav>
+</header>
+
+<main>
+  <div class="main__logo">
+    <img class="logo__img" src="Labenu_logo.png" alt="Logo Labenu"> 
+  </div> 
+
+    <section class="main__background"> 
+
+        <div class="main__content">
+        <div class="content__box"><span class="content__box--elements">Mobile FrontEnd</span></div>
+
+        <div class="content__box"><span class="content__box--elements">Data Science</span></div>
+
+        <div class="content__box"><span class="content__box--elements">Web FullStack</span></div>
+        </div>
+      
+    </section>
+
+
+    <div class="form">
+
+      <form method="GET" name="form" onsubmit="return validarEmail();" action="pagina2.html">
+       <input type="email" id="email" name="email" placeholder="Digite seu email para contato :)" required>
+      <button class="btn" type="submit">Enviar</button>
+      </form>
+
+    </div>
+
+  <p id="teste"></p>
+
+</main>
+
+<script type="text/javascript">
+    function validarEmail() {
+      if (email.value =="") {
+        alert("E-mail inválido");
+        email.focus();
+        return false;
+    }
+    else{
+      // Alert user
+      alert("O e-mail " + email.value + " foi enviado!")
+      return true;
+    }
+  }
+</script> 
+
+</body>
+
+</html>

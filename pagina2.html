@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="estilo.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+  <title>Document</title>
+
+  <script>
+  
+  function cumprimentar() {
+    // https://stackoverflow.com/questions/14693758/passing-form-data-to-another-html-page
+  
+    // https://stackoverflow.com/questions/979975/how-to-get-the-value-from-the-get-parameters
+    var url = new URL(window.location);
+    var email = url.searchParams.get("email");
+
+    element = window.document.getElementById("boas_vindas")
+    element.innerHTML  = "Bem vindo(a) " + email + "!"
+  }
+  </script>
+
+
+</head>
+
+<body onload="cumprimentar();">
+
+ <h1 id ="boas_vindas" class="pagina2__titulo"> Bem vindo(a) </h1>
+
+
+</body>
+</html>
